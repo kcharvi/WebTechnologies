@@ -1,0 +1,25 @@
+
+body {
+color: purple;
+font-family: verdana, Arial, Geneva, Arial Black;
+<!font-weight:lighter;>
+font-weight: normal;
+<!font-weight: bold;>
+<!font-weight: bolder;>
+}
+h1,h2 {
+text-decoration: line-through;
+
+}
+.first {
+color: pink;
+font-size: 25px;
+
+
+}
+p.second {
+color: blue;
+font-size: 25px;
+
+
+}
