@@ -7,7 +7,8 @@
 > 3. Get two input number using Text box, select operator using select option- use submit button to perform particular operation.
 
 > 4. Study Of Form Handling In PHP- Design the personal information form, submit and retrieve the form data using php $\_POST, $\_GET, $\_REQUEST variable.
->    <img src="">
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q4.png">
 
 > 5. Create a webpage using PHP that consists of textboxes to read “empid,” “salary,” “eName,” and “address.” The webpage should consist of submit and reset buttons. The form should be directed to a php file to
 >    a. Check whether empid is proper or not (length of empid must be 8, the first four places of empid must be characters and the remaining are digits)
@@ -15,7 +16,7 @@
 >    c. eName must have characters only. The first character has to be capital letter.
 >    d. Display the length of the address on the webpage.
 
-> 6. Write a PHP program to write 50 numbers into a file. Read 15 numbers at a time from the file and find the numbers which occurs even number of times and odd number of times   
+> 6. Write a PHP program to write 50 numbers into a file. Read 15 numbers at a time from the file and find the numbers which occurs even number of times and odd number of times  
 >    Input: 2 4 6 7 7 7 8 9 0 1 11 11
 >    Even: 11
 >    Odd: 2 4 6 7 8 9 0 1
@@ -37,29 +38,35 @@
 > 10. Design the personal information form which consist of Last name, First ;name, Gender, place of birth, Nationality and write PHP code to submit and retrieve the form data using $POST, $ GET, $ REQUEST variable.
 
 > 11. Design the below page using HTML. Write only HTML.
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q11.png">
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q11.png">
 
 > 12. Create the below page using HTML. Write the JAVA SCRIPT code to validate the user input on clicking the SUBMIT button as follows
 >     a. None of the input fields are empty
 >     b. Message field must not be more than 140 characters long. If all validations are passed alert a message “VALIDATION SUCCESSFUL
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q12.png>
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q12.png>
 
 > 13. Create a html page mentioned as follows. Create this page using tables only. Use internal CSS only to apply the shown styles to the data and cells.
 >     Change text color: red and italic
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q13.png>
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q13.png>
 
 > 14. Design the below page using HTML. Write only HTML
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q14.png">
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q14.png">
 
 > 15. Create the below page using HTML. Write the JAVA SCRIPT code to validate the user input on clicking the button as follows
 >     a. Onclicking First button, the text present in the Text field should changed as red colour and text background as pink color, Uppercase.
 >     b. Onclicking Second button, the text present in the Text field should changed as yellow colour and text background as red color, Uppercase
 
 > 16. Create a html page mentioned as follows. Create this page using tables only. Use internal CSS only to apply the shown styles to the data and cells.
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q16.png">
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q16.png">
 
 > 17. Create a HTML page using lists and display the lists as blocks of information using internalCSS as shown below on the webpage.
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q17.png">
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q17.png">
 
 > 18. Consider a table “Compinfo” with fields (Compname(string), product(int), price(int), address(string)) in “compdb” database in MySQL.
 >     a. Create home.php page consisting of hyperlinks for about.php, create.php, remove.php pages.
@@ -85,10 +92,12 @@
 > 21. Use AngularJS to create two controllers favsubject and favmovie consisting of subnames, movnames arrays respectively.
 >     Create two textboxes FavouriteSubject and FavouriteMovie and respective buttons to add favourite subjects and movies to respective arrays.
 >     Also create 2 buttons to remove the last items of each array. Use appropriate directives of angularJS to display the list of arrays on the webpage.
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q21.png>
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q21.png>
 
 > 22. Create the HTML page below. Write the JAVA SCRIPT code such that
 >     a. On clicking 'Add Sports', an item will be added to the existing list as the third element.
 >     b. On Clicking 'Remove Sports', the first element in the list should be removed.
 >     c. On clicking Update Data, the color of 2nd element should turn to red.
->     <img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q22.png>
+
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q22.png>
