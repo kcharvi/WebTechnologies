@@ -93,11 +93,11 @@
 >     Create two textboxes FavouriteSubject and FavouriteMovie and respective buttons to add favourite subjects and movies to respective arrays.
 >     Also create 2 buttons to remove the last items of each array. Use appropriate directives of angularJS to display the list of arrays on the webpage.
 
-<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q21.png>
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q21.png">
 
 > 22. Create the HTML page below. Write the JAVA SCRIPT code such that
 >     a. On clicking 'Add Sports', an item will be added to the existing list as the third element.
 >     b. On Clicking 'Remove Sports', the first element in the list should be removed.
 >     c. On clicking Update Data, the color of 2nd element should turn to red.
 
-<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q22.png>
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q22.png">
