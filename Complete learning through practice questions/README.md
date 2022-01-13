@@ -45,12 +45,12 @@
 >     a. None of the input fields are empty
 >     b. Message field must not be more than 140 characters long. If all validations are passed alert a message “VALIDATION SUCCESSFUL
 
-<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q12.png>
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q12.png">
 
 > 13. Create a html page mentioned as follows. Create this page using tables only. Use internal CSS only to apply the shown styles to the data and cells.
 >     Change text color: red and italic
 
-<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q13.png>
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q13.png">
 
 > 14. Design the below page using HTML. Write only HTML
 
