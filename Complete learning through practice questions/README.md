@@ -100,4 +100,4 @@
 >     b. On Clicking 'Remove Sports', the first element in the list should be removed.
 >     c. On clicking Update Data, the color of 2nd element should turn to red.
 
-<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q22.png">
+<img src="https://github.com/kcharvi/WebTechnologies/blob/main/Complete%20learning%20through%20practice%20questions/assets/Q22.jpg">
