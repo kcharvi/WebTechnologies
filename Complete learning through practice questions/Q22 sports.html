@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mySportsApp">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+        <script src="Q22 app.js"></script>
+        <title>Sports</title>
+        <style>
+            .secondRed:nth-child(2) {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div ng-controller="sportsController">
+            <h1>Sports</h1>
+            New Sport: <input type="text" ng-model="newSport" />
+            <br />
+            <br />
+            <button ng-click="addSport()" name="addSports">Add Sports</button>
+            <button ng-click="removeSport()" name="addSports">Remove Sports</button>
+            <button ng-click="updateData()" name="addSports">Update Data</button>
+
+            <br />
+            <ol>
+                <li ng-class="[classRed]" ng-repeat="x in sports">{{ x }}</li>
+            </ol>
+        </div>
+    </body>
+</html>
