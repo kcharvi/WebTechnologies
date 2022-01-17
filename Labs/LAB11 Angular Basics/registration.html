@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19BCE7002 - STUDENT REGISTRATION</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-route/1.8.2/angular-route.js"></script>
+    <script src="controller.js"></script>
+    <script src="regcontroller.js"></script>
+  </head>
+  <body>
+    <center>
+      <h1><u>SEMESTER REGISTRATION</u></h1>
+    </center>
+    <br />
+    <div class="mydiv2" ng-app="mainApp" ng-controller="regCtrl">
+      <center>
+        <input class="inputt" type="text" ng-model="addMe" />
+        <button class="btn1" ng-click="addItem()">
+          Add <i class="fas fa-plus-circle"></i>
+        </button>
+      </center>
+      <br />
+      <hr />
+
+      <center>
+        <h3><u>Registered Courses</u></h3>
+      </center>
+      <ul style="list-style: none">
+        <li ng-repeat="x in courseList">
+          <i ng-click="removeItem($index)" class="fas fa-trash-alt btn2"></i
+          >{{x}}<span ng-click="removeItem($index)"></span>
+        </li>
+        <br />
+      </ul>
+      <br />
+      <div style="float: right">
+        <button class="btn3" ng-controller="lgotCtrl" ng-click="lgot()">
+          Logout
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</html>

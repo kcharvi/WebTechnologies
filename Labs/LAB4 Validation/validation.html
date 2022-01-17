@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            h1 {
+                color: rgb(255, 255, 255);
+            }
+            span {
+                color: red;
+            }
+            .con {
+                background-color: rgb(197, 217, 235);
+                color: black;
+                padding: 0 10px;
+                border-radius: 20px;
+            }
+            .in {
+                padding: 6px 10px;
+                margin: 4px 0;
+                box-sizing: border-box;
+                border-radius: 5px;
+            }
+            button {
+                background-color: hsl(167, 79%, 44%); /* Green */
+                border: none;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Validation Form</title>
+    </head>
+    <body
+        style="
+            padding: 0 30%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(6, 55, 99);
+        "
+    >
+        <center>
+            <h1><u> Faculty Registration Form </u></h1>
+        </center>
+        <div class="con">
+            <pre style="font-family: 'Montserrat', sans-serif">
+        <form onsubmit="return m1()" >
+Employee Registration Number <span>*</span>:   <input type="number" class="in" id="emp_no"/><br>
+                                                 Name <span>*</span>:   <input class="in" type="text" id="ename"/><br><br>
+                                             Gender <span>*</span>:   <input class="in" type="radio" id="f" name="gen"> Female <input type="radio" id="m" name="gen">Male <br><br>
+                                                   DOB <span>*</span>:   <input type="date" id="dob"><br><br>
+                                                   DOJ <span>*</span>:   <input type="text" class="in" id="doj" placeholder="dd-mmm-yyyy" value=""><br><br>
+                                                Email <span>*</span>:   <input class="in" type="email" id="mail"/><br>
+                                              Mobile <span>*</span>:   <input class="in" type="number" id="no"/><br>
+                                             <button type="submit">Submit</button>  <button onclick="m2()">Clear</button><br><br>
+                                    <center><span> <b> DONE BY : 19BCE7002 </b></span></center>
+        </form>
+        </pre>
+        </div>
+        <script>
+            function m1() {
+                var eid = document.getElementById("emp_no");
+                var e_name = document.getElementById("ename");
+                var g = document.getElementsByName("gen");
+                var birth = document.getElementById("dob");
+                var join = document.getElementById("doj");
+                var e_mail = document.getElementById("mail");
+                var ph = document.getElementById("no");
+                if (
+                    eid.value == "" ||
+                    e_name.value == "" ||
+                    g.value == "" ||
+                    birth.value == "" ||
+                    join.value == "" ||
+                    e_mail.value == "" ||
+                    ph.value == ""
+                ) {
+                    alert("All fields are mandatory");
+                }
+
+                var numbers = /^[0-9]+$/;
+                var characters = /^[A-Za-z]+$/;
+                var emailAddress =
+                    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@(vitap.ac.in|gmail.com|yahoo.com|microsoft.com|outlook.com|linuxconfig.org)$/;
+                var flag = true;
+                if (eid.value.length != 6 || eid.value < 500000 || eid.value > 599999) {
+                    alert("Registration number is invalid.");
+                    flag = false;
+                }
+
+                if (ph.value.length != 10) {
+                    alert("Must be 10 digits");
+                    flag = false;
+                }
+
+                if (e_name.value.length > 10 && e_name.value.length < 40) {
+                    var regex = /^[A-Za-z0-9 ]+$/;
+                    var isValid = regex.test(e_name.value);
+                    if (!isValid) {
+                        alert("Invalid Employee Name: Contains Special Characters.");
+                    }
+                    flag = false;
+                } else {
+                    alert("Employee name should be above 10 and below 40 characters");
+                    flag = false;
+                }
+
+                if (!e_mail.trim().match(emailAddress)) {
+                    alert("Invalid Email Address");
+                    flag = false;
+                }
+
+                if (join !== undefined && join !== "") {
+                    var myDate = new Date(join);
+                    var month = [
+                        "Jan",
+                        "Feb",
+                        "Mar",
+                        "Apr",
+                        "May",
+                        "Jun",
+                        "Jul",
+                        "Aug",
+                        "Sep",
+                        "Oct",
+                        "Nov",
+                        "Dec",
+                    ][myDate.getMonth()];
+                    var str = myDate.getDate() + " " + month + " " + myDate.getFullYear();
+                    join.value = str;
+                }
+
+                if (flag) {
+                    alert("Validation Successfull");
+                }
+            }
+            function m2() {
+                var eid = document.getElementById("emp_no");
+                var e_name = document.getElementById("ename");
+                var g = document.getElementsByName("gen");
+                var birth = document.getElementById("dob");
+                var join = document.getElementById("doj");
+                var e_mail = document.getElementById("mail");
+                var ph = document.getElementById("no");
+                eid.value == "";
+                e_name.value == "";
+                g.value == "";
+                birth.value == "";
+                join.value == "";
+                e_mail.value == "";
+                ph.value == "";
+            }
+        </script>
+    </body>
+</html>

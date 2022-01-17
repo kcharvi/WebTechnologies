@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <style>
+            
+            div {
+                align-content: center;
+                width: 350px;
+                border: 5px solid black;
+                padding: 50px;
+                margin: 20px;
+            }
+            .cal {
+                background-color: rgb(223, 229, 241);
+            }
+            .in {
+                width: 100%;
+                padding: 4px 10px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid rgb(4, 34, 90);
+                border-radius: 4px;
+            }
+
+            button {
+                background-color: white;
+                border: 2px solid rgb(4, 34, 90);
+                color: black;
+                padding: 3px 20px;
+                text-align: center;
+                display: inline-block;
+                font-size: 25px;
+                border-radius: 5px;
+            }
+        </style>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+    </head>
+    <body style="padding: 0 30%;font-family: 'Montserrat', sans-serif;">
+        
+        <div class="cal">
+            <h1>Calculator: 19BCE7002</h1>
+            Enter First Number: <input type="number" class="in" name="f" id="n1" /><br /><br />
+            Enter Second Number: <input type="number" class="in" name="s" id="n2" /><br /><br />
+            Result: <input type="number" class="in" name="r" id="res" /><br />
+            <br />
+            <button name="add" onclick="add()">+</button>
+            <button name="sub" onclick="sub()">-</button>
+            <button name="mul" onclick="mul()">*</button>
+            <button name="div" onclick="div()">/</button>
+            <button name="mod" onclick="mod()">%</button>
+        </center>
+        </div>
+        <script>
+            function add() {
+                var x = parseInt(document.getElementById("n1").value);
+                var y = parseInt(document.getElementById("n2").value);
+                var z = x + y;
+                document.getElementById("res").value = z;
+            }
+            function sub() {
+                var x = parseInt(document.getElementById("n1").value);
+                var y = parseInt(document.getElementById("n2").value);
+                var z = x - y;
+                document.getElementById("res").value = z;
+            }
+            function mul() {
+                var x = parseInt(document.getElementById("n1").value);
+                var y = parseInt(document.getElementById("n2").value);
+                var z = x * y;
+                document.getElementById("res").value = z;
+            }
+            function div() {
+                var x = parseInt(document.getElementById("n1").value);
+                var y = parseInt(document.getElementById("n2").value);
+                var z = x / y;
+                document.getElementById("res").value = z;
+            }
+            function mod() {
+                var x = parseInt(document.getElementById("n1").value);
+                var y = parseInt(document.getElementById("n2").value);
+                var z = x % y;
+                document.getElementById("res").value = z;
+            }
+        </script>
+    </body>
+</html>
